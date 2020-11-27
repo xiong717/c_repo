@@ -2,16 +2,18 @@
 void myqsort(void * base, size_t nitems, size_t size, int(*compar)(const void *, const void *))
 {
 	int i, j;
-	char * st = (char *)base; //void *²»·½±ã¼Ó¼õ£¬ÓÃchar *¼Ó¼õÇáËÉÇÒ×Ö½ÚÌø×ªÎª1£¬·½±ã¿ØÖÆ¡£
-	char tmp[16]; //¿¼ÂÇµ½long doubleÀàĞÍ£¬ÁÙÊ±¿Õ¼ä×ö³É16×Ö½Ú±È½Ï±£ÏÕ
+	char * st = (char *)base; 
+	//void *ä¸æ–¹ä¾¿åŠ å‡ï¼Œç”¨char *åŠ å‡è½»æ¾ä¸”å­—èŠ‚è·³è½¬ä¸º1ï¼Œæ–¹ä¾¿æ§åˆ¶ã€‚
+	char tmp[16]; 
+	//è€ƒè™‘åˆ°long doubleç±»å‹ï¼Œä¸´æ—¶ç©ºé—´åšæˆ16å­—èŠ‚æ¯”è¾ƒä¿é™©
 
 	for (i = 0; i < nitems - 1; i++)
 	{
-		for (j = 0; j < nitems - 1 - i; j++) //Ã°Åİ³£ÓÃÑ­»·Í·
+		for (j = 0; j < nitems - 1 - i; j++)  //å†’æ³¡
 		{
-			if (compar(st + j * size, st + (j + 1) * size)) //±È½ÏµÄÊ±ºòÌø×ª×¢Òâ³Ësize
+			if (compar(st + j * size, st + (j + 1) * size)) //æ¯”è¾ƒçš„æ—¶å€™è·³è½¬æ³¨æ„ä¹˜size
 			{
-				memcpy(tmp, st + j * size, size); //½»»»²Ù×÷ÓÃmemcpyÍê³É¾Í²»»á³öÎÊÌâ¡£
+				memcpy(tmp, st + j * size, size); //äº¤æ¢æ“ä½œç”¨memcpyå®Œæˆå°±ä¸ä¼šå‡ºé—®é¢˜ã€‚
 				memcpy(st + j * size, st + (j + 1) * size, size);
 				memcpy(st + (j + 1) * size, tmp, size);
 			}
