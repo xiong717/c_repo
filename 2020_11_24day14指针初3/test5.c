@@ -24,8 +24,8 @@ int main()
 		}
 		printf("\n");
 	}
-	//打印下半部分
-	for (i = 0; i<line - 1; i++)
+	
+	for (i = 0; i<line - 1; i++)//  打 印下半部分
 	{
 		//打印一行
 		int j = 0;
