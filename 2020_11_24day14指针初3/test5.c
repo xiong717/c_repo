@@ -1,7 +1,6 @@
 //打印菱形
 #include<stdio.h>
 #include<windows.h>
-
 int main()
 {
 	int line = 0;
