@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<windows.h>
 #include<string.h>
-
 //编写一个函数 reverse_string(char * string)（递归实现）将参数字符串中的字符反向排列。
 //非递归 给两个指针，left放在字符串左侧，right放在最后一个有效字符位置
 //2. 交换两个指针位置上的字符
