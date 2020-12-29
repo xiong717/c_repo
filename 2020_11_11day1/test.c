@@ -3,7 +3,6 @@
 #include<stdlib.h>
 #include<time.h>
 
-
 #if 0
 int main()
 {
