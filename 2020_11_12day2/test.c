@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
 #include <math.h>
-
 //int IsPrime(int n)
 //{
 //	int top = (int)sqrt(n);//强转类型
