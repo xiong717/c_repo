@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<windows.h>
+
+
 //给定两个数，求这两个数的最大公约数
 //int main()
 //{
